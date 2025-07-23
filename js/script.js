@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             fullscreenLetter.classList.add('active');
             document.body.style.overflow = 'hidden';
             createHeartExplosion();
-        }, 1000);
+        }, 5000);
 
         createInitialHearts();
     }
