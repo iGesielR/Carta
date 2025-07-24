@@ -248,8 +248,7 @@ body::before {
 }
 
 .fullscreen-letter-content {
-    padding: 80px 20px 120px;
-    padding-bottom: 120px;
+    padding: 80px 95px 130px;
     height: 100%;
     overflow-y: auto;
     max-width: 600px;
@@ -343,8 +342,15 @@ body::before {
 
 .bottom-right {
     position: absolute;
-    bottom: 15px;
+    bottom: 35px;
     right: 10px;
+}
+
+.bottom-left {
+    width: 140px;
+    height: auto;
+    bottom: -150px;
+    left: -30px;
 }
 
 
