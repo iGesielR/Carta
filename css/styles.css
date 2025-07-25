@@ -116,10 +116,22 @@ body::before {
     height: 0;
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
-    border-top: 100px solid #ff3366;
+    border-top: 100px solid #ff3366c5;
     transform-origin: top;
     transition: transform 0.5s ease;
     filter: drop-shadow(0 -5px 5px rgba(0, 0, 0, 0.1));
+}
+
+.envelope-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid #b3270e44; 
+    transform-origin: bottom;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
 }
 
 .envelope.open .envelope-flap {
@@ -346,12 +358,52 @@ body::before {
     right: 10px;
 }
 
-.bottom-left {
-    width: 140px;
-    height: auto;
-    bottom: -150px;
-    left: -30px;
+.signature-with-img {
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
 }
+
+.kitty-inline {
+    position: absolute;
+    left: -25px; 
+    bottom: 0;
+    width: 80px;
+    height: auto;
+    animation: pulse 1.5s infinite;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.paragraph-with-gatito {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    max-width: 100%;
+}
+
+.gatito-deco {
+    position: absolute;
+    bottom: -1px;
+    right: -170px;
+    width: 60px;
+    height: auto;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+
+.custom-openkitty-img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: auto;
+    animation: pulse 1.5s infinite;
+    z-index: 10;
+}
+
+
 
 
 @keyframes floatimg {
