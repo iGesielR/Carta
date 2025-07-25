@@ -147,3 +147,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     envelopeWrapper.addEventListener('click', playSound);
 });
+
+const gatitoImg = document.getElementById('mauw');
+
+    gatitoImg.addEventListener('click', function (e) {
+        e.stopPropagation(); // Evita que dispare también el sobre
+        const maullido = new Audio('./meow.mp3');
+        maullido.play().catch(error => {
+            console.log("No se pudo reproducir el audio:", error);
+        });
+    });
